@@ -159,4 +159,11 @@ closeModel.addEventListener("click", () => {
     Modal.classList.toggle("show_modal");
     imag.remove();
 })
+
+var alert = document.getElementById("alert");
+alert.style.display = "none";
+var removeAlert = document.querySelector('.alert');
+setTimeout(() => {
+    removeAlert.style.display = "none";
+}, 5000);
 </script>

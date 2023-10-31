@@ -114,6 +114,7 @@ if (!$_SESSION && empty($_SESSION["msg"])) {
                 } ?>
                 <div class="submit-btn">
                     <input type="submit" value="Mettre à jour">
+                    <button onclick="removeuser(event)" type="button">Suppimer l'utilisateur</button>
                 </div>
             </form>
         </div>
@@ -127,6 +128,10 @@ logoutBtn.addEventListener("click", () => {
     location.href = "../controller/EndSession.php";
 })
 
+function removeuser(e){
+    e.preventDefault;
+    window.location.href="../controller/removeUser.php?id=<?php echo $_SESSION['target_id'] ?>";
+}
 
 var Modal = document.querySelector(".modal");
 var closeModel = document.querySelector(".modal button");

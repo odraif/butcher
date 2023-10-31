@@ -158,6 +158,19 @@ input[type=submit]:hover{
     background-color: #3d850d;
 }
 
+.submit-btn button {
+    margin: 20px;
+    background-color: #da0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.submit-btn button:hover{
+    background-color: #b30000;
+}
+
 .show_modal{
     display: grid;
 }
