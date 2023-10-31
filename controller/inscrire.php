@@ -9,7 +9,7 @@ if (!empty($_POST)) {
     $password = mysqli_real_escape_string($conx,password_hash($_POST['password'], PASSWORD_DEFAULT));
     $date = mysqli_real_escape_string($conx, date("Y-m-d H:i:s"));
 
-    $insertValues = "INSERT INTO user (Nom,Email,N_Telephone,Password,DocName,isAdmin,reg_date) VALUES ('$name','$email','$phone','$password','vide',0,'$date')";
+    $insertValues = "INSERT INTO user (Nom,Email,N_Telephone,Password,DocName,Valider,isAdmin,reg_date) VALUES ('$name','$email','$phone','$password','vide','non',0,'$date')";
 
     if (!mysqli_query($conx, $insertValues)) {
 

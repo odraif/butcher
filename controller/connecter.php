@@ -28,7 +28,7 @@ if (!empty($_POST)) {
             $_SESSION['doc'] = $result["DocName"];
 
             if ($result["isAdmin"]) {
-                echo "is an admin";
+                header("location:../dashboard/");
             } else {
                 header("location:../profile/");
             }

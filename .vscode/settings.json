@@ -35,5 +35,8 @@
         "votre",
         "vous"
     ],
-    "php.version": "8.1.2-1ubuntu2.14"
+    "php.version": "8.1.2-1ubuntu2.14",
+    "cSpell.ignoreWords": [
+        "Valider"
+    ]
 }

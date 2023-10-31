@@ -1,4 +1,5 @@
 <?php
+
 $host = '127.0.0.1';
 $user = 'root';
 $password = '';
@@ -31,6 +32,7 @@ $table = "CREATE TABLE IF NOT EXISTS user(
     N_Telephone VARCHAR(15) NOT NULL,
     Password VARCHAR(255) NOT NULL,
     DocName VARCHAR(100),
+    Valider VARCHAR(10),
     isAdmin TINYINT  NOT NULL,
     reg_date VARCHAR(100))";
 
